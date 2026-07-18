@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Menu at Ember & Oak — espresso, pour-overs, tea, and fresh pastries." />
+    <meta name="theme-color" content="#2c1a12" />
+    <title>Menu · Ember & Oak</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-veil" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="index.html" aria-label="Ember & Oak home">
+          <span class="brand-mark">Ember & Oak</span>
+          <span class="brand-sub">Coffeehouse</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html" aria-current="page">Menu</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-hero wrap">
+        <span class="eyebrow">Menu</span>
+        <h1>What’s brewing</h1>
+        <p class="lede">Seasonal drinks and oven-warm bites — crafted to comfort, priced to share often.</p>
+      </header>
+
+      <section class="section" style="padding-top: 0">
+        <div class="wrap">
+          <div class="menu-banner reveal">
+            <div>
+              <span class="eyebrow">Today’s table</span>
+              <h2 style="font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--espresso); margin: 0.4rem 0 0.75rem">
+                Coffee first, pastry close behind
+              </h2>
+              <p style="color: var(--muted)">
+                Ask about oat, almond, or house-made cinnamon milk. Decaf available on espresso drinks.
+              </p>
+            </div>
+            <img src="assets/menu-spread.jpg" alt="Coffee drinks and pastries arranged on an oak table" width="800" height="600" />
+          </div>
+
+          <div class="menu-toolbar reveal" role="group" aria-label="Filter menu">
+            <button type="button" class="chip is-active" data-menu-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-menu-filter="espresso" aria-pressed="false">Espresso</button>
+            <button type="button" class="chip" data-menu-filter="brew" aria-pressed="false">Brewed</button>
+            <button type="button" class="chip" data-menu-filter="other" aria-pressed="false">Tea &amp; more</button>
+            <button type="button" class="chip" data-menu-filter="food" aria-pressed="false">Bites</button>
+          </div>
+
+          <div class="menu-grid">
+            <section class="menu-category reveal" data-menu-category="espresso">
+              <h2>Espresso bar</h2>
+              <article class="menu-item">
+                <h3>House Espresso</h3>
+                <span class="price">$3.25</span>
+                <p>Dense, chocolate-forward shot with a caramel finish.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Flat White</h3>
+                <span class="price">$4.75</span>
+                <p>Velvet microfoam, double ristretto — our most requested cup.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Ember Latte</h3>
+                <span class="price">$5.25</span>
+                <p>Espresso, steamed milk, hint of smoked maple and cinnamon.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Terracotta Mocha</h3>
+                <span class="price">$5.50</span>
+                <p>Dark cocoa, espresso, and a whisper of orange zest.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Cortado</h3>
+                <span class="price">$4.25</span>
+                <p>Equal parts espresso and silky steamed milk.</p>
+              </article>
+            </section>
+
+            <section class="menu-category reveal" data-menu-category="brew">
+              <h2>Brewed &amp; slow</h2>
+              <article class="menu-item">
+                <h3>Batch Brew</h3>
+                <span class="price">$3.50</span>
+                <p>Daily rotating single origin — ask what’s in the urn.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Pour Over</h3>
+                <span class="price">$5.00</span>
+                <p>V60, made to order. Bright, clean, and unhurried.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Cold Brew</h3>
+                <span class="price">$4.75</span>
+                <p>Steeped overnight — smooth, low-acid, oak-aged sweetness.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Amber Affogato</h3>
+                <span class="price">$6.25</span>
+                <p>Vanilla gelato drowned in a hot espresso shot.</p>
+              </article>
+            </section>
+
+            <section class="menu-category reveal" data-menu-category="other">
+              <h2>Tea &amp; comfort</h2>
+              <article class="menu-item">
+                <h3>Chamomile Honey</h3>
+                <span class="price">$3.75</span>
+                <p>Soft floral steam with local honey.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Spiced Chai Latte</h3>
+                <span class="price">$4.95</span>
+                <p>House-steeped masala, steamed milk, cracked pepper finish.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Hot Cocoa</h3>
+                <span class="price">$4.25</span>
+                <p>Real melted chocolate, whipped cream cloud.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Sparkling Yuzu Tonic</h3>
+                <span class="price">$4.50</span>
+                <p>Citrus bright, lightly bitter, ice-cold.</p>
+              </article>
+            </section>
+
+            <section class="menu-category reveal" data-menu-category="food">
+              <h2>From the oven</h2>
+              <div style="margin-bottom: 1.25rem; border-radius: var(--radius); overflow: hidden; max-width: 420px">
+                <img src="assets/pastries.jpg" alt="Fresh pastries on wooden boards" width="600" height="450" loading="lazy" />
+              </div>
+              <article class="menu-item">
+                <h3>Cinnamon Morning Bun</h3>
+                <span class="price">$4.25</span>
+                <p>Butter-laminated swirl, crackled sugar top.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Butter Croissant</h3>
+                <span class="price">$3.75</span>
+                <p>Shatter-crisp layers, soft heart.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Olive Oil Cake</h3>
+                <span class="price">$4.50</span>
+                <p>Citrus crumb, rosemary honey drizzle.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Avocado Toast</h3>
+                <span class="price">$8.50</span>
+                <p>Sourdough, chili flake, lemon, soft herbs.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Seasonal Soup Cup</h3>
+                <span class="price">$5.50</span>
+                <p>Changes with the market — always comforting.</p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <div class="footer-brand">Ember & Oak</div>
+          <p>A neighborhood coffeehouse for warm mornings, soft light, and cups worth lingering over.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <a href="contact.html">142 Maple Street</a>
+          <a href="contact.html">Riverside</a>
+          <a href="tel:+15554820193">(555) 482-0193</a>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="about.html">About us</a>
+          <a href="menu.html">Menu</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© <span data-year></span> Ember & Oak Coffeehouse</span>
+        <span>Crafted for quiet mornings</span>
+      </div>
+    </footer>
+
+    <script src="js/site-config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

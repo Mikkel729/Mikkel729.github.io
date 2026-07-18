@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Guest reviews of Ember & Oak Coffeehouse — warm cups, kind service, cozy atmosphere." />
+    <meta name="theme-color" content="#2c1a12" />
+    <title>Reviews · Ember & Oak</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-veil" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="index.html" aria-label="Ember & Oak home">
+          <span class="brand-mark">Ember & Oak</span>
+          <span class="brand-sub">Coffeehouse</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="reviews.html" aria-current="page">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-hero wrap">
+        <span class="eyebrow">Reviews</span>
+        <h1>Stories from the table</h1>
+        <p class="lede">Kind words from neighbors who make this house feel alive.</p>
+      </header>
+
+      <section class="section" style="padding-top: 0">
+        <div class="wrap">
+          <div class="reviews-grid" data-reviews-grid>
+            <article class="review-card reveal">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>“The flat white tastes like a quiet Sunday. I come for the coffee and stay for the light through the windows.”</blockquote>
+              <div class="reviewer">
+                <div class="avatar" aria-hidden="true">JL</div>
+                <div>
+                  <strong>Jordan L.</strong>
+                  <span>Regular · Riverside</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card reveal reveal-delay-1">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>“Cinnamon morning bun disappeared before my latte cooled. Staff remembered my name by the second visit.”</blockquote>
+              <div class="reviewer">
+                <div class="avatar" aria-hidden="true">MS</div>
+                <div>
+                  <strong>Mina S.</strong>
+                  <span>Weekend guest</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card reveal reveal-delay-2">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>“Finally a café that feels warm without trying too hard — terracotta cups, oak tables, no rush.”</blockquote>
+              <div class="reviewer">
+                <div class="avatar" aria-hidden="true">AP</div>
+                <div>
+                  <strong>Alex P.</strong>
+                  <span>Neighborhood walk-in</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card reveal">
+              <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+              <blockquote>“Pour-over was bright and clean. Only wish they opened a little earlier on Saturdays — I’d be first in line.”</blockquote>
+              <div class="reviewer">
+                <div class="avatar" aria-hidden="true">RK</div>
+                <div>
+                  <strong>Riley K.</strong>
+                  <span>Coffee wanderer</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card reveal reveal-delay-1">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>“Brought my parents here. Mom said it smelled like ‘a hug.’ We’ll be back for the terracotta mocha.”</blockquote>
+              <div class="reviewer">
+                <div class="avatar" aria-hidden="true">TN</div>
+                <div>
+                  <strong>Tara N.</strong>
+                  <span>Family visit</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card reveal reveal-delay-2">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>“Laptop-friendly without feeling like an office. Soft music, kind baristas, perfect corner seat.”</blockquote>
+              <div class="reviewer">
+                <div class="avatar" aria-hidden="true">CW</div>
+                <div>
+                  <strong>Chris W.</strong>
+                  <span>Remote mornings</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="wrap" style="max-width: 720px">
+          <div class="form-card reveal">
+            <span class="eyebrow">Share yours</span>
+            <h2 style="font-family: var(--font-display); font-size: 1.75rem; color: var(--espresso); margin: 0.35rem 0 0.75rem">
+              Leave a review
+            </h2>
+            <p style="color: var(--muted); margin-bottom: 1.25rem">
+              Tell us about your visit. Your words help neighbors find their next favorite cup.
+            </p>
+
+            <form data-secure-form data-form-type="review" novalidate>
+              <div class="hp-field" aria-hidden="true">
+                <label>Website <input type="text" name="website_url" tabindex="-1" autocomplete="off" /></label>
+              </div>
+
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" maxlength="80" required autocomplete="name" />
+                  <span class="error" data-error-for="name"></span>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" maxlength="120" required autocomplete="email" />
+                  <span class="error" data-error-for="email"></span>
+                </div>
+                <div class="field">
+                  <label for="rating">Rating</label>
+                  <select id="rating" name="rating" required>
+                    <option value="">Choose…</option>
+                    <option value="5">5 — Exceptional</option>
+                    <option value="4">4 — Lovely</option>
+                    <option value="3">3 — Good</option>
+                    <option value="2">2 — Okay</option>
+                    <option value="1">1 — Needs work</option>
+                  </select>
+                  <span class="error" data-error-for="rating"></span>
+                </div>
+                <div class="field full">
+                  <label for="message">Your review</label>
+                  <textarea id="message" name="message" maxlength="800" required placeholder="What made your visit special?"></textarea>
+                  <span class="error" data-error-for="message"></span>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Submit review</button>
+                <p class="form-note">Reviews are moderated for kindness &amp; safety.</p>
+              </div>
+              <div class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <div class="footer-brand">Ember & Oak</div>
+          <p>A neighborhood coffeehouse for warm mornings, soft light, and cups worth lingering over.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <a href="contact.html">142 Maple Street</a>
+          <a href="contact.html">Riverside</a>
+          <a href="tel:+15554820193">(555) 482-0193</a>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="about.html">About us</a>
+          <a href="menu.html">Menu</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© <span data-year></span> Ember & Oak Coffeehouse</span>
+        <span>Crafted for quiet mornings</span>
+      </div>
+    </footer>
+
+    <script src="js/site-config.js"></script>
+    <script src="js/secure-form.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

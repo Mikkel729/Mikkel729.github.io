@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact Ember & Oak Coffeehouse — hours, location, and a secure message form." />
+    <meta name="theme-color" content="#2c1a12" />
+    <title>Contact · Ember & Oak</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-veil" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="index.html" aria-label="Ember & Oak home">
+          <span class="brand-mark">Ember & Oak</span>
+          <span class="brand-sub">Coffeehouse</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-hero wrap">
+        <span class="eyebrow">Contact</span>
+        <h1>Say hello</h1>
+        <p class="lede">Questions, catering, or just a kind note — we’d love to hear from you.</p>
+        <div class="page-hero-art">
+          <img src="assets/storefront.jpg" alt="Ember & Oak storefront on Maple Street" width="1400" height="600" />
+        </div>
+      </header>
+
+      <section class="section" style="padding-top: 1rem">
+        <div class="wrap contact-grid">
+          <aside class="info-panel reveal">
+            <h2>Visit the house</h2>
+            <dl>
+              <div class="info-row">
+                <dt>Address</dt>
+                <dd>142 Maple Street<br />Riverside</dd>
+              </div>
+              <div class="info-row">
+                <dt>Phone</dt>
+                <dd><a href="tel:+15554820193">(555) 482-0193</a></dd>
+              </div>
+              <div class="info-row">
+                <dt>Email</dt>
+                <dd><a href="mailto:hello@emberandoak.cafe">hello@emberandoak.cafe</a></dd>
+              </div>
+              <div class="info-row">
+                <dt>Hours</dt>
+                <dd>Mon–Fri 7:00am – 6:00pm<br />Sat–Sun 8:00am – 5:00pm</dd>
+              </div>
+            </dl>
+          </aside>
+
+          <div class="form-card reveal reveal-delay-2">
+            <h2 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--espresso); margin-bottom: 0.35rem">
+              Send a message
+            </h2>
+            <p style="color: var(--muted); margin-bottom: 1.25rem; font-size: 0.95rem">
+              Protected with bot traps, rate limits, and sanitized input — safe for static hosting.
+            </p>
+
+            <form data-secure-form data-form-type="contact" novalidate autocomplete="on">
+              <div class="hp-field" aria-hidden="true">
+                <label>Website <input type="text" name="website_url" tabindex="-1" autocomplete="off" /></label>
+              </div>
+
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" maxlength="80" required autocomplete="name" />
+                  <span class="error" data-error-for="name"></span>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" maxlength="120" required autocomplete="email" />
+                  <span class="error" data-error-for="email"></span>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone <span style="font-weight: 400; color: var(--muted)">(optional)</span></label>
+                  <input id="phone" name="phone" type="tel" maxlength="30" autocomplete="tel" />
+                  <span class="error" data-error-for="phone"></span>
+                </div>
+                <div class="field">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject">
+                    <option value="General hello">General hello</option>
+                    <option value="Catering">Catering</option>
+                    <option value="Private event">Private event</option>
+                    <option value="Feedback">Feedback</option>
+                  </select>
+                  <span class="error" data-error-for="subject"></span>
+                </div>
+                <div class="field full">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" maxlength="2000" required></textarea>
+                  <span class="error" data-error-for="message"></span>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send message</button>
+                <p class="form-note">We never share your details.</p>
+              </div>
+              <div class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <div class="footer-brand">Ember & Oak</div>
+          <p>A neighborhood coffeehouse for warm mornings, soft light, and cups worth lingering over.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <a href="contact.html">142 Maple Street</a>
+          <a href="contact.html">Riverside</a>
+          <a href="tel:+15554820193">(555) 482-0193</a>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="about.html">About us</a>
+          <a href="menu.html">Menu</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© <span data-year></span> Ember & Oak Coffeehouse</span>
+        <span>Crafted for quiet mornings</span>
+      </div>
+    </footer>
+
+    <script src="js/site-config.js"></script>
+    <script src="js/secure-form.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
